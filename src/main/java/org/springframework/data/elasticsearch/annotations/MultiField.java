@@ -29,7 +29,7 @@ import java.lang.annotation.Target;
  * @author Xiao Yu
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
+@Target({ElementType.FIELD, ElementType.METHOD})
 @Documented
 public @interface MultiField {
 

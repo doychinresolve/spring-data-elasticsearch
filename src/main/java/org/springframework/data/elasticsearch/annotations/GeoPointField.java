@@ -21,7 +21,7 @@ import java.lang.annotation.*;
  * @author Artur Konczak
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
+@Target({ElementType.FIELD, ElementType.METHOD})
 @Documented
 public @interface GeoPointField {
 

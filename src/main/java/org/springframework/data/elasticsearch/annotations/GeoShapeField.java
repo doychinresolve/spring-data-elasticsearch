@@ -27,7 +27,7 @@ import java.lang.annotation.Target;
  * @since 4.1
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
+@Target({ElementType.FIELD, ElementType.METHOD})
 @Documented
 public @interface GeoShapeField {
 	Orientation orientation() default Orientation.ccw;
